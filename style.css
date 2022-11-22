@@ -1,3 +1,8 @@
+body{
+  font-family: 'DM Sans', sans-serif;
+
+}
+
 .containerNav {
   display: flex;
   justify-content: space-between;
@@ -8,8 +13,8 @@
 .itemNav {
 }
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 #titulo {
@@ -98,18 +103,18 @@ input {
 }
 
 .footer {
-    position: relative;
-    background: #05b3a4;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 35%;
-    flex-wrap: wrap 
-  }
-  
+  position: relative;
+  background: #05b3a4;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 35%;
+  flex-wrap: wrap;
+}
+
 .footer p {
   color: #fff;
   margin: 15px 10 10px 0;
