@@ -1,0 +1,57 @@
+.containerNav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.itemNav {
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.containerDiv {
+  display: flex;
+  justify-content: space;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap
+
+  
+  
+}
+/* .itemDiv{
+    width: 70%;
+    height: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    
+} */
+
+    /* #descripcion {
+        display: flex;
+        width: 70%;
+        height: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 7%;
+    } */
+
+#titulo {
+  font-size: 300%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  align-items: center;
+}
+.tituloItem {
+  margin: 0;
+  margin-left: 3%;
+  justify-content: center;
+}
+
+
