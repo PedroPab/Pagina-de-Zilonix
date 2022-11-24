@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/PedroPab/Pagina-de-Zilonix/issues"
   },
-  "homepage": "https://github.com/PedroPab/Pagina-de-Zilonix#readme"
+  "homepage": "https://github.com/PedroPab/Pagina-de-Zilonix#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
 }
