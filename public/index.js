@@ -1,6 +1,5 @@
 //Variables para identificar objetos dentro de la pagina
 var fieldsID = "input" // Identificador de todos los campos del formulario
-console.log("hol")
 //Campos estaticos
 var Pais = "Colombia"
 var Producto = "pagina inicial"
