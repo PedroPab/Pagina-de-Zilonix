@@ -1,108 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zilonix</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div>
-      <div class="containerNav">
-        <div class="itemNav">
-          <img
-            class="logo"
-            src="./imagenes/c76ff5f2-be9f-4f06-b88e-4a87ffb0ff85.jpeg"
-            alt="logo"
-            srcset=""
-            width="60px"
-            height="60px"
-          />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zilonix - Innovación en E-commerce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #8A4FFF;
+            --secondary-color: #E0D7FF;
+            --accent-color: #B388FF;
+            --text-color: #333333;
+            --background-color: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--background-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        #hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--background-color);
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--background-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .services {
+            padding: 4rem 0;
+            background-color: var(--secondary-color);
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--background-color);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            #hero h1 {
+                font-size: 2rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Zilonix</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Impulsando el E-commerce Latinoamericano</h1>
+            <p>Soluciones creativas y efectivas para tu negocio en línea</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
         </div>
+    </section>
 
-        <div class="itemNav">
-          <a aria-label="Chat on WhatsApp" href="https://wa.me/ Q">
-            <img
-              alt="Chat on WhatsApp"
-              src="./imagenes/WhatsAppButtonGreenLarge.svg"
-            />
-          </a>
+   </section>
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Marketing Digital</h3>
+                    <p>Estrategias innovadoras para captar la atención de tu audiencia.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Integramelo</h3>
+                    <p>Plataforma para impulsar tu negocio en línea, conectando diferentes actores del ecosistema de e-commerce latinoamericano</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Acompañamiento financiero</h3>
+                    <p>Capacitacionest y acompañamiento para que puedas medir las variables que de verdad impactan tu tienda virutal</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div id="titulo">
-      <h6 class="tituloItem">Grupo</h6>
-      <h1 class="tituloItem">Zilonix</h1>
-    </div>
-
-    <div class="containerDiv">
-      <div id="formulario">
-        <form id="form" action="" method="">
-          <h2>Envíanos tu información y te asesoramos</h2>
-
-          <div id="listaForm">
-            <label for="inputTelefono">Telefono </label>
-            <input id="inputTelefono" type="number" />
-
-            <label for="inputNombre">Nombre </label>
-            <input id="inputNombre" type="text" />
-
-            <label for="inputCorreo">Correo </label>
-            <input id="inputCorreo" type="text" />
-
-            <label for="inputMotivo">Motivo </label>
-            <input id="inputMotivo" type="text" />
-
-            <br />
-            <input type="button" value="Enviar" onclick="buttonClick(
-              inputTelefono.value,
-              inputCorreo.value
-            )" />
-            <p id="parrafoInfo"></p>
-
-          </div>
-        </form>
-      </div>
-
-      <div id="descripcion">
-        <h3>¿Qué es Zilonix?</h3>
-        <p>
-          Somos un grupo empresarial, formado por más de 3 comercios,
-          especializados en comercio electrónico con más de 4 años de
-          experiencia en el mercado. Nos hemos entrenado durante este tiempo
-          para lograr las habilidades necesarias para llamar la atención y
-          vender de manera exitosa y rentable diferentes productos o servicios
-          usando las redes sociales.
-        </p>
-        <h3>¿Qué hace Zilonix?</h3>
-        <p>
-          Ofrecemos asesoramiento a cualquier empresa que desee crecer de manera
-          exponencial junto a nosotros y con el apoyo de nuestros equipos hasta
-          lograr los objetivos establecidos. Zilonix nace por la necesidad de
-          unificar un grupo de diferentes comercios especializados en distintas
-          áreas necesarias para un comercio electrónico exitoso tales como:
-          Desarrollo creativo de piezas publicitarias como videos e imágenes,
-          medición y análisis de datos, marketing, ventas, entre otros.
-        </p>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <p style="opacity: 0.75">Telefono XXX XXXX XXX</p>
-      <p style="opacity: 0.75">WhatsApp XXX XXXX XXX</p>
-      <p style="opacity: 0.75">Ubicacion Medellin Colombia</p>
-      <p style="opacity: 0.75">Facebook fase</p>
-      <p style="opacity: 0.75">Correo Zilonix@gmail.com</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zilonix E-commerce. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="./index.js"></script>
-    <script src="./enviar.js"></script>
-  </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Simple parallax effect for hero section
+            window.addEventListener('scroll', () => {
+                const scrolled = window.scrollY;
+                document.querySelector('#hero').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+            });
+        });
+    </script>
+</body>
 </html>
