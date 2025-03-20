@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zilonix - Innovación en E-commerce</title>
+    <title>Zilonix S.A.S. - Innovación en E-commerce</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -150,6 +150,10 @@
             margin-top: 4rem;
         }
 
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
         .social-links {
             margin-top: 1rem;
         }
@@ -183,7 +187,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Zilonix</div>
+            <div class="logo">Zilonix S.A.S.</div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -195,13 +199,12 @@
 
     <section id="hero">
         <div class="container">
-            <h1>Impulsando el E-commerce Latinoamericano</h1>
+            <h1>Impulsando el E-commerce con Innovación</h1>
             <p>Soluciones creativas y efectivas para tu negocio en línea</p>
             <a href="#contacto" class="btn">Contáctanos</a>
         </div>
     </section>
 
-   </section>
     <section id="servicios" class="services">
         <div class="container">
             <h2>Nuestros Servicios</h2>
@@ -213,13 +216,13 @@
                 </div>
                 <div class="service-card">
                     <i class="fas fa-shopping-cart"></i>
-                    <h3>Integramelo</h3>
-                    <p>Plataforma para impulsar tu negocio en línea, conectando diferentes actores del ecosistema de e-commerce latinoamericano</p>
+                    <h3>Soluciones E-commerce</h3>
+                    <p>Plataformas integrales para impulsar tu negocio en línea.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chart-pie"></i>
-                    <h3>Acompañamiento financiero</h3>
-                    <p>Capacitacionest y acompañamiento para que puedas medir las variables que de verdad impactan tu tienda virutal</p>
+                    <h3>Análisis de Datos</h3>
+                    <p>Insights poderosos para tomar decisiones informadas.</p>
                 </div>
             </div>
         </div>
@@ -227,7 +230,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Zilonix E-commerce. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Zilonix S.A.S. E-commerce. Todos los derechos reservados.</p>
+            <p>Dirección: Calle 31 da #89-01.</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -239,7 +243,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            // Smooth scrolling for navigation links
+            // Smooth scrolling para los enlaces de navegación
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -249,7 +253,7 @@
                 });
             });
 
-            // Simple parallax effect for hero section
+            // Efecto parallax simple para la sección hero
             window.addEventListener('scroll', () => {
                 const scrolled = window.scrollY;
                 document.querySelector('#hero').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
